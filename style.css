@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700,400,600);
+@import url(http://fonts.googleapis.com/css?family=Armata);*/
+@media screen and (max-width:1200px) {
+
+}
+
+* {box-sizing:border-box;-o-box-sizing:border-box;-moz-box-sizing:border-box;}
+html, body {height: 100%;}
+body{color:#454849;font-family: 'Open Sans', sans-serif;font-size:14px;line-height:20px;}
+html,body,h1,h2,h3,h4,h5,h6,ul,li,p,menu {margin:0;padding:0;}
+ul,li {list-style:none;}
+input,button,textarea {outline:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;}
+strong {font-weight: bold;}
+img {border: 0;max-width: 100%;}
+button,input,optgroup,select,textarea {color: inherit;font: inherit;margin: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+td,th {padding: 0;}
+a{text-decoration:none;color:#63d0bb;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;}
+a:active, a:hover {color:#40a390;outline: 0;}
+h1{font-size: 40px;font-weight: 300;text-transform: uppercase;margin-bottom: 50px;color: #fff;line-height: 80px;}
+h2{text-transform: uppercase;font-weight: 300;font-size: 39px;padding: 15px 0 30px 0;line-height: 40px;}
+h3{font-size:20px;color:#3a3a3a;font-weight:300;}
+h4{font-size:20px;font-weight:bold;margin-bottom:20px;}
+
+/* Каркас */
+header {background-color:#1D3037;min-height:80px;width:100%;}
+#page{min-height: 100%;margin-bottom: -240px;padding-bottom: 240px;}/*необходимо для прижатого футера*/
+.page-buffer {clear:both;height: 240px;}/*необходимо для прижатого футера*/
+.wrapper{width:100%;max-width:900px;margin:0 auto;}
+.float_left{float:left;}
+.float_right{float:right;}
+.centertext {text-align:center;}
+.clearfix:after, .clearfix:before {content:" ";display:block;clear:both;height:0;overflow: hidden;}
+.table-cell{display:table-cell;vertical-align:middle;}
+
+/*GO*/
+
+header .logoimg{padding: 30px 0 0 35px;float: left;}
+header nav ul{font-size: 18px;text-align: right;padding: 31px 98px 31px 0;}
+header nav ul li{display: inline-block;margin-left: 10px;}
+header nav ul li a{color: #ffffff;font-family: "Armata", sans-serif;font-size: 14px;}
+header nav ul li img{vertical-align: middle;}
+header nav ul li a:hover{color: #2EE6C3;}
+
+/*Жеки менюха*/
+.uWithSubmenu {text-align: left;}
+.uWithSubmenu ul:before {content:"";display:block;margin: -14px 0 0 10px;width:0;height:0;position:absolute;border: 7px solid transparent;border-bottom: 7px solid #29c0a3;}
+.uWithSubmenu ul {display:none;width:200px;margin:0 0 0 0;z-index:9999;}
+.uWithSubmenu ul li {float: left; display:block !important;width:100% !important;position:relative;margin-left: 0 !important;}
+.uWithSubmenu ul li a {color: #1D3037; padding: 0 20px 0 20px;font: 15px/40px Open Sans, sans-serif !important;display:block !important;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;}
+.uWithSubmenu:hover ul, .uWithSubmenu:focus ul, .uWithSubmenu:active ul {display:block;position:absolute;background:#29c0a3;color:#fff;}
+.uWithSubmenu ul li a:hover {background:#2ee6c3;color: #ffffff;}
+.uWithSubmenu ul li ul {left:200px;top:0;display:none !important;}
+.uWithSubmenu ul li ul:before {border:0!important;margin:0!important;}
+.uWithSubmenu ul li:hover ul {display:block !important;}
+
+/*footer*/
+footer {min-height:240px;color:#fff;font-size: 12px;margin-top:-240px;}
